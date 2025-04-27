@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+#card {
+    width: 90%;
+    max-width: 600px;
+    background-image: linear-gradient(red, yellow);
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav input {
+    outline: 0;
+    color: #555;
+    height: 55px;
+    padding: 0 20px;
+    border: black solid 2px;
+    flex: 1;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+nav button {
+    outline: 0;
+    border: none;
+    background: black;
+    width: 59px;
+    height: 59px;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    margin: 5% 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#main-trait,
+.trait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.trait {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: left;
+    width: 50%;
+}
+
+.atmosphere-trait {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.atmosphere-trait img {
+    width: 30%;
+}
+
+.atmosphere-trait .trait {
+    width: 100%;
+}
+
+#temp {
+    font-size: 8em;
+}
+
+#error {
+    display: none;
+    margin: 20% 0;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -5px 10px white;
+    padding: 20px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media all and (max-width: 500px) {
+    #card {
+        padding: 20px 10px;
+    }
+
+    #temp {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 768px) {
+    #card {
+        padding: 20px 10px;
+    }
+
+    #temp {
+        font-size: 6.5em;
+    }
+
+    h2 {
+        font-size: large;
+    }
+}

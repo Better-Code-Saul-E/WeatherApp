@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <noscript>Please enable Javscript to use this app!</noscript>
+    <main id="card">
+        <nav id="search">
+            <button id="location-button"><img src="images/LocationOff.svg" id="location-image" alt="Location Icon"></button>
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button id="search-button"><img src="images/Search.svg" alt="Search Icon"></button>
+        </nav>
+        <article id="error">
+            <h1>Invalid entry</h1>
+            <p>Enter a city name</p>
+        </article>
+        <article id="weather">
+            <section style="text-align: center;">
+                <h3 id="country-code" aria-live="polite">Country, Code</h3>
+            </section>
+            <section>
+                <div class="trait">
+                    <img id="temp-icon" src="images/DayClear.svg" alt="Weather Icon">
+                </div>
+                <div id="main-trait">
+                    <h1 id="temp" aria-live="polite">98</h1>
+                    <p id="temp-description" aria-live="polite">Description</p>ƒ
+                </div>
+            </section>
+            <section>
+                <div class="atmosphere-trait">
+                    <img src="images/Humidity.svg" alt="Humidity Icon">
+                    <div class="trait">
+                        <h2 id="humidity" aria-live="polite">98%</h2>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="atmosphere-trait">
+                    <img src="images/WindSpeed.svg" alt="Wind Speed Icon">
+                    <div class="trait">
+                        <h2 id="windSpeed" aria-live="polite">98%</h2>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <a href="https://github.com/Better-Code-Saul-E"><img src="images/Github.svg"></a>
+        <p>Saul Enriquez, © All rights Reserved</p>
+        <a href="www.linkedin.com/in/saul-enriquez-chicago"><img src="images/LinkedIn.svg"></a>
+    </footer>
+
+</body>
+
+</html>
